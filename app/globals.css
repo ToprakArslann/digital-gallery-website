@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000;
+  --foreground: #fff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-murecho);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+* {
+  cursor: url('/cursor1.png'), auto;
+
+}
+
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+.pointer,
+*[onclick] {
+  cursor: url('/cursor2.png'), pointer;
+}
