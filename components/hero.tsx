@@ -9,7 +9,7 @@ export default function Hero() {
         offset: ["start start", "end end"]
     })
 
-    const springConfig = { stiffness: 100, damping: 30, restDelta: 0.001 }
+    const springConfig = { stiffness: 100, damping: 50, restDelta: 0.001 }
 
     const z1Raw = useTransform(scrollYProgress, [0, 1], [0, -800])
     const z2Raw = useTransform(scrollYProgress, [0, 1], [400, -400])
@@ -27,7 +27,7 @@ export default function Hero() {
     return (
         <div className="flex h-[300vh]" ref={container}>
 
-            <div className="flex flex-col items-center justify-center w-full h-screen gap-20 sticky top-0 overflow-hidden">
+            <div className="flex flex-col items-center justify-center w-full h-screen gap-20 sticky top-0 overflow-hidden z-1 bg-black">
                 <div className="flex flex-col items-center justify-center gap-2 text-center tracking-tight z-4">
                     <h2 className="flex flex-row text-3xl font-medium gap-2">A Space for
                         <span className="relative">
@@ -59,19 +59,19 @@ export default function Hero() {
                         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }} style={{ translateZ: z1 }} className="w-65 h-80 flex items-center justify-center absolute right-0 z-1">
                             <Image src="/stock1.png" alt="stock" fill className="object-cover" />
                         </motion.div>
-                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.1 }} style={{ translateZ: z2 }} className="w-65 h-80 flex items-center justify-center absolute  top-0 -translate-y-60 translate-x-35 z-2">
+                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.1 }} style={{ translateZ: z2 }} className="w-65 h-80 flex items-center justify-center absolute  top-0 -translate-y-60 translate-x-35 z-2 shadow-2xl">
                             <Image src="/stock2.png" alt="stock" fill className="object-cover" />
                         </motion.div>
-                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ translateZ: z3 }} className="w-65 h-80 flex items-center justify-center absolute -translate-y-60  z-3">
+                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ translateZ: z3 }} className="w-65 h-80 flex items-center justify-center absolute -translate-y-60  z-3 shadow-2xl">
                             <Image src="/stock3.png" alt="stock" fill className="object-cover" />
                         </motion.div>
-                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.3 }} style={{ translateZ: z4 }} className="w-65 h-80 flex items-center justify-center absolute top-0 left-0 translate-x-10 -translate-y-20 z-4">
+                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.3 }} style={{ translateZ: z4 }} className="w-65 h-80 flex items-center justify-center absolute top-0 left-0 translate-x-10 -translate-y-20 z-4 shadow-2xl">
                             <Image src="/stock44.png" alt="stock" fill className="object-cover" />
                         </motion.div>
-                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.4 }} style={{ translateZ: z5 }} className="w-65 h-80 flex items-center justify-center absolute -translate-x-50 translate-y-30 z-5">
+                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.4 }} style={{ translateZ: z5 }} className="w-65 h-80 flex items-center justify-center absolute -translate-x-50 translate-y-30 z-5 shadow-2xl">
                             <Image src="/stock5.png" alt="stock" fill className="object-cover" />
                         </motion.div>
-                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }} style={{ translateZ: z6 }} className="w-65 h-80 flex items-center justify-center absolute bottom-0 -translate-y-20 z-6">
+                        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }} style={{ translateZ: z6 }} className="w-65 h-80 flex items-center justify-center absolute bottom-0 -translate-y-20 z-6 shadow-2xl">
                             <Image src="/stock6.png" alt="stock" fill className="object-cover" />
                         </motion.div>
                     </div>
