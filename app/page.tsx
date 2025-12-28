@@ -3,6 +3,7 @@ import { ReactLenis } from "lenis/react";
 import Navigation from "@/components/navigation";
 import About from "@/components/about";
 import Collections from "@/components/collections";
+import Artists from "@/components/artists";
 export default function Home() {
   return (
     <main className="flex flex-col font-sans">
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Collections />
+      <Artists />
     </main>
   );
 }

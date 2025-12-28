@@ -48,3 +48,7 @@ input[type="button"],
 .cursor3 {
   cursor: url('/cursor3.png'), pointer;
 }
+
+.cursor4 {
+  cursor: url('/cursor4.png'), auto;
+}
