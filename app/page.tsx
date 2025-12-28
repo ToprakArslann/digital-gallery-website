@@ -4,6 +4,7 @@ import Navigation from "@/components/navigation";
 import About from "@/components/about";
 import Collections from "@/components/collections";
 import Artists from "@/components/artists";
+import Contact from "@/components/contact";
 export default function Home() {
   return (
     <main className="flex flex-col font-sans">
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Collections />
       <Artists />
+      <Contact />
     </main>
   );
 }
