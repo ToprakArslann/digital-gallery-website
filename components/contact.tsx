@@ -3,7 +3,7 @@ import { CaseSensitive, Mail, Text, TextCursor } from "lucide-react"
 import { motion } from "motion/react"
 export default function Contact() {
     return (
-        <div className="w-full h-screen flex flex-col items-center justify-center gap-6 tracking-tight relative">
+        <div className="w-full h-screen flex flex-col items-center justify-center gap-6 tracking-tight">
             <div className="flex flex-col items-center justify-center text-center">
                 <h2 className="text-2xl font-medium">Get in Touch</h2>
                 <p className="text-xl bg-linear-45 from-[#3D3D3D] to-75 to-[white] bg-clip-text text-transparent">For collaborations, exhibitions, or general <br /> inquiries, feel free to <span></span> <span className="relative text-white">
@@ -45,11 +45,6 @@ export default function Contact() {
                 </svg>
 
             </a>
-            <div className="w-full flex flex-row items-center justify-between absolute bottom-0 text-sm text-[#807F80]">
-                <p>Digital Gallery © 2025</p>
-                <p className="flex flex-row gap-1">Made By <a href="https://www.toprakdev.com" className="text-white" target="_blank" rel="noopener noreferrer">Toprak Arslan</a></p>
-                <p>The digital face of contemporary art.</p>
-            </div>
         </div>
     )
 }
