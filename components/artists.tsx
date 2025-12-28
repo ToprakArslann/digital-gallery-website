@@ -5,9 +5,9 @@ import Image from "next/image"
 export default function Artists() {
     return (
         <div className="w-full h-screen flex items-center justify-center text-center overflow-hidden cursor4 relative">
-            <p className="text-3xl bg-linear-45 from-[#3D3D3D] to-75 to-[white] bg-clip-text text-transparent p-2">We <span></span>
-                <span className="relative text-white ">
-                    <svg className="absolute left-0 bottom-1" width="149" height="4" viewBox="0 0 149 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <p className="text-lg md:text-3xl bg-linear-45 from-[#3D3D3D] to-75 to-[white] bg-clip-text text-transparent p-2 relative z-10">We <span></span>
+                <span className="relative text-[#a6a6a6] ">
+                    <svg className="absolute left-0 bottom-1 w-[90px] md:w-[150px]" width="149" height="4" viewBox="0 0 149 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <motion.path initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} d="M1 3.00049L75 1.00049L148 3.00049" stroke="#BBFF00" stroke-width="2" stroke-linecap="round" />
                     </svg>
                     collaborate
@@ -21,15 +21,15 @@ export default function Artists() {
 
                 </span>
                 <br /> Each artist brings a <span></span>
-                <span className="relative text-white">
+                <span className="relative text-[#a6a6a6]">
                     unique
-                    <svg className="absolute -right-3.5 -bottom-1" width="113" height="62" viewBox="0 0 113 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="absolute -right-2 md:-right-3.5 -bottom-3 md:-bottom-1 w-[70px] md:w-[110px]" width="113" height="62" viewBox="0 0 113 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <motion.path initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} transition={{ duration: 1, delay: 0.5 }} viewport={{ amount: 0.1, once: true }} d="M112 25.4806C112 25.4806 77.9772 19.0383 63.2856 19.8973C48.5939 20.7562 49.3672 18.1793 25.3966 22.4742C1.42601 26.769 -0.120402 45.2368 1.42605 48.2432C2.9725 51.2496 5.67887 55.5444 27.7163 58.5508C49.7538 61.5572 64.8321 61.5572 79.5237 59.8392C94.2154 58.1213 113.16 59.8392 104.654 40.083C96.1485 20.3268 20.7571 1 20.7571 1" stroke="#BBFF00" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 10" />
                     </svg>
                 </span>
                 <span></span> perspective to digital expression.
             </p>
-            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 700, translateY: 50 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: "40vw", translateY: 50 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F7D3C8]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar1.png" alt="avatar" fill className="object-cover" />
@@ -40,7 +40,7 @@ export default function Artists() {
                     <p className="bg-[#F7D3C8] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Generative Artist</p>
                 </div>
             </motion.div>
-            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 300, translateY: 300 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: "20vw", translateY: 300 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F4D6D6]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar2.png" alt="avatar" fill className="object-cover" />
@@ -51,7 +51,7 @@ export default function Artists() {
                     <p className="bg-[#F4D6D6] h-full flex items-center justify-center text-black text-base pr-2">3D Artist</p>
                 </div>
             </motion.div>
-            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 400, translateY: -200 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: "25vw", translateY: -200 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#E6F4EF]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar3.png" alt="avatar" fill className="object-cover" />
@@ -73,7 +73,7 @@ export default function Artists() {
                     <p className="bg-[#E8EDDC] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Visual Artist</p>
                 </div>
             </motion.div>
-            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: -550, translateY: 200 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: "-30vw", translateY: 200 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#E6EFE9]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar4.png" alt="avatar" fill className="object-cover" />
@@ -84,7 +84,7 @@ export default function Artists() {
                     <p className="bg-[#E6EFE9] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Motion Designer</p>
                 </div>
             </motion.div>
-            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: -50, translateY: -300 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: "-5vw", translateY: -300 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F3E1E8]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar7.png" alt="avatar" fill className="object-cover" />
@@ -95,7 +95,7 @@ export default function Artists() {
                     <p className="bg-[#F3E1E8] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">3D & Visual Artist</p>
                 </div>
             </motion.div>
-            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: -540, translateY: -50 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: "-25vw", translateY: -50 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F9E4D2]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar6.png" alt="avatar" fill className="object-cover" />
