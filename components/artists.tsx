@@ -29,7 +29,7 @@ export default function Artists() {
                 </span>
                 <span></span> perspective to digital expression.
             </p>
-            <div className="flex flex-row items-center justify-center h-15">
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 700, translateY: 50 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F7D3C8]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar1.png" alt="avatar" fill className="object-cover" />
@@ -39,8 +39,8 @@ export default function Artists() {
                     <h2 className="bg-[#F7D3C8] h-full flex items-center justify-center text-black text-2xl pr-2">Arjun Patel</h2>
                     <p className="bg-[#F7D3C8] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Generative Artist</p>
                 </div>
-            </div>
-            <div className="flex flex-row items-center justify-center h-15">
+            </motion.div>
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 300, translateY: 300 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F4D6D6]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar2.png" alt="avatar" fill className="object-cover" />
@@ -50,8 +50,8 @@ export default function Artists() {
                     <h2 className="bg-[#F4D6D6] h-full flex items-center justify-center text-black text-2xl pr-2 whitespace-nowrap">Noah Richter</h2>
                     <p className="bg-[#F4D6D6] h-full flex items-center justify-center text-black text-base pr-2">3D Artist</p>
                 </div>
-            </div>
-            <div className="flex flex-row items-center justify-center h-15">
+            </motion.div>
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 400, translateY: -200 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#E6F4EF]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar3.png" alt="avatar" fill className="object-cover" />
@@ -61,8 +61,8 @@ export default function Artists() {
                     <h2 className="bg-[#E6F4EF] h-full flex items-center justify-center text-black text-2xl pr-2 whitespace-nowrap">Max Turner</h2>
                     <p className="bg-[#E6F4EF] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Art Director</p>
                 </div>
-            </div>
-            <div className="flex flex-row items-center justify-center h-15">
+            </motion.div>
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: 0, translateY: 150 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#E8EDDC]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar5.png" alt="avatar" fill className="object-cover" />
@@ -72,8 +72,8 @@ export default function Artists() {
                     <h2 className="bg-[#E8EDDC] h-full flex items-center justify-center text-black text-2xl pr-2 whitespace-nowrap">Luca Moreau</h2>
                     <p className="bg-[#E8EDDC] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Visual Artist</p>
                 </div>
-            </div>
-            <div className="flex flex-row items-center justify-center h-15">
+            </motion.div>
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: -550, translateY: 200 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#E6EFE9]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar4.png" alt="avatar" fill className="object-cover" />
@@ -83,8 +83,8 @@ export default function Artists() {
                     <h2 className="bg-[#E6EFE9] h-full flex items-center justify-center text-black text-2xl pr-2 whitespace-nowrap">Ethan Cole</h2>
                     <p className="bg-[#E6EFE9] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Motion Designer</p>
                 </div>
-            </div>
-            <div className="flex flex-row items-center justify-center h-15">
+            </motion.div>
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: -50, translateY: -300 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F3E1E8]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar7.png" alt="avatar" fill className="object-cover" />
@@ -94,8 +94,8 @@ export default function Artists() {
                     <h2 className="bg-[#F3E1E8] h-full flex items-center justify-center text-black text-2xl pr-2 whitespace-nowrap">Yuki Tanaka</h2>
                     <p className="bg-[#F3E1E8] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">3D & Visual Artist</p>
                 </div>
-            </div>
-            <div className="flex flex-row items-center justify-center h-15">
+            </motion.div>
+            <motion.div initial={{ translateX: 0, translateY: 0 }} whileInView={{ translateX: -540, translateY: -50 }} transition={{ duration: 1 }} viewport={{ amount: 0.1, once: true }} className="flex flex-row items-center justify-center h-15 absolute">
                 <div className="h-full p-2 flex items-center justify-center bg-[#F9E4D2]">
                     <div className="w-12 h-12 rounded-full overflow-hidden relative">
                         <Image src="/avatar6.png" alt="avatar" fill className="object-cover" />
@@ -105,7 +105,7 @@ export default function Artists() {
                     <h2 className="bg-[#F9E4D2] h-full flex items-center justify-center text-black text-2xl pr-2 whitespace-nowrap">Leon Fischer</h2>
                     <p className="bg-[#F9E4D2] h-full flex items-center justify-center text-black text-base pr-2 whitespace-nowrap">Visual Artist</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
