@@ -60,7 +60,7 @@ export default function Hero() {
                             <Image src="/stock1.png" alt="stock" fill className="object-cover" />
                         </motion.div>
                         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.1 }} style={{ translateZ: z2 }} className="w-65 h-80 flex items-center justify-center absolute  top-0 -translate-y-60 translate-x-35 z-2 shadow-2xl">
-                            <Image src="/stock2.png" alt="stock" fill className="object-cover" />
+                            <Image src="/stock11.png" alt="stock" fill className="object-cover" />
                         </motion.div>
                         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }} style={{ translateZ: z3 }} className="w-65 h-80 flex items-center justify-center absolute -translate-y-60  z-3 shadow-2xl">
                             <Image src="/stock3.png" alt="stock" fill className="object-cover" />
